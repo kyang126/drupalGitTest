@@ -11,6 +11,7 @@ $query = $connection->query("SELECT * FROM tblNBA WHERE playerName LIKE '%$q%' O
     array_push( $playerArray, $player);
   }
 
+/*Development BrRANCH */
   foreach( $playerArray as $player ) {  ?>
   <tr>
     <td> <img src="http://i.cdn.turner.com/nba/nba/.element/img/2.0/sect/statscube/players/large/<?php echo $player->getimgName() ?>.png" height = "100" width = "100"> </td>
